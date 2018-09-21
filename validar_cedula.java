@@ -54,8 +54,7 @@ public static boolean validarCedula(String cedula){
 
 	int digito = (10 - (suma % 10)) % 10;
 
-    // Comprobamos que el dígito de control coincide
-    
+    // Comprobamos que el dígito de control coincide    
 	if (digito != Character.getNumericValue(cedula.charAt(10))){
 	    return false;
 	}
